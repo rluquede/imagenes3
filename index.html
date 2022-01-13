@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+    <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media(min-width:1024px) {
+            img {
+                width: 630px;
+            }
+        }
+
+        @media(min-width:512px) and (max-width: 1024px) {
+            img {
+                width: 450px;
+            }
+        }
+
+        @media(min-width:256px) and (max-width: 512px) {
+            img {
+                width: 200px;
+            }
+        }
+
+        @media(max-width:256px) {
+            img {
+                width: 110px;
+            }
+        }
+
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels1O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels1G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels1P.webp">
+            <img src="./img/pexels10M.webp" alt="Codigo JS">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels2O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels2G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels2P.webp">
+            <img src="./img/pexels2M.webp" alt="Escritorio con dispositivos">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels3O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels3G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels3P.webp">
+            <img src="./img/pexels3M.webp" alt="Escritorio blanco">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels4O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels4G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels4P.webp">
+            <img src="./img/pexels4M.webp" alt="Compra online">
+        </picture>
+        <picture>
+            <source media="(min-width: 512px)" srcset="./img/imagen5G.gif">
+            <img src="./img/imagen5M.gif" alt="Diseño web">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels6O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels6G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels6P.webp">
+            <img src="./img/pexels6M.webp" alt="Ordenador navegando">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/imagen7G.webp">
+            <source media="(max-width: 256px)" srcset="./img/imagen7P.webp">
+            <img src="./img/imagen7M.webp" alt="icono diseño web">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels8O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels8G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels8P.webp">
+            <img src="./img/pexels8M.webp" alt="Ordenador navegando">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels9O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels9G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels9P.webp">
+            <img src="./img/pexels9M.webp" alt="letras SEO">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels10O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels10G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels10P.webp">
+            <img src="./img/pexels10M.webp" alt="teclado con una tablet">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels11O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels11G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels11P.webp">
+            <img src="./img/pexels11M.webp" alt="gotas en una tela de araña">
+        </picture>
+        <picture>
+            <source media="(min-width: 2048px)" srcset="./img/pexels12O.webp">
+            <source media="(min-width: 512px) and (max-width: 2048px)" srcset="./img/pexels12G.webp">
+            <source media="(max-width: 256px)" srcset="./img/pexels12P.webp">
+            <img src="./img/pexels12M.webp" alt="persona navegando">
+        </picture>
+    </div>
+
+    <table>
+        <tr>
+            <th>average size</th>
+            <th>Image format</th>
+            <th>loading time</th>
+        </tr>
+        <tr>
+            <td>672,5KiB</td>
+            <td>webp, webp, GIF</td>
+            <td>6,8s</td>
+        </tr>
+    </table>
+</body>
+
+</html>
